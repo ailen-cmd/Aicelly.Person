@@ -56,6 +56,7 @@ body {
     color: #e5e9f0;
     background-color: #434c5e;
     border: #434c5e 10px solid;
+    font-size: 1.1vw;
     border-radius: 15px;
     transition-property: color, border-radius, border-color, background-color;
     transition-duration: .2s; 
@@ -69,7 +70,6 @@ body {
 @media (max-width: 1400px) {
     .navigation__text:not(last-child) {
         margin-right: 20px;
-        font-size: 20px;
     }
 }
 
@@ -107,17 +107,18 @@ body {
 .hero {
     height: 800px;
     background-color: #3b4252;
-    background: url(/img/back.jpg) no-repeat fixed center / cover;
+    background: url(/img/nord.jpg) no-repeat fixed center / cover;
 }
 
 .hero__person {
-    max-height: 800px;
+    max-height: 600px;
     display: flex;
     justify-content: center;
     margin: auto;
 }
 
 .hero__article {
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     margin-top: 45px;
@@ -227,10 +228,12 @@ body {
     color: #e5e9f0;
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     transition-property: color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
+    font-size: 1.5vw;
 }
 
 .hero__links:hover {
@@ -270,10 +273,10 @@ body {
 .hero__discription {
     margin-top: 25px;
     color: #e5e9f0;
-    font-size: 22px;
+    font-size: 1.4vw;
     background-color: #3b4252;
     border-radius: 15px;
     padding: 5px;
     overflow: auto;
-    max-height: 800px;
+    max-height: 400px;
 }
