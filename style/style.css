@@ -8,7 +8,6 @@ body {
 
 .navigationHeader {
     font-family: Helvetica, sans-serif;
-    font-size: 22px;
     background-color: #2e3440;
 }
 
@@ -49,7 +48,7 @@ body {
 }
 
 .navigation__content {
-    display: inline-block;
+    list-style: none;
 }
 
 .navigation__text {
@@ -105,9 +104,9 @@ body {
 }
 
 .hero {
-    height: 800px;
+    height: 700px;
+    background: url(/img/background.jpg) no-repeat fixed center / cover;
     background-color: #3b4252;
-    background: url(/img/nord.jpg) no-repeat fixed center / cover;
 }
 
 .hero__person {
@@ -189,11 +188,12 @@ body {
 .hero__buttons {
     display: flex;
     background-color: #434c5e;
+    color: #d8dee9;
     height: 60px;
     border: #434c5e 10px solid;
     border-radius: 15px;
     box-shadow: 0 0 10px #434c5e;
-    transition-property: transform, border-color, background-color, box-shadow;
+    transition-property: transform, border-color, background-color, box-shadow, color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
 }
@@ -204,6 +204,8 @@ body {
     background-color: #4c566a;
     border-color: #4c566a;
     box-shadow: 0 0 10px #4c566a;
+    text-decoration: none;
+    color: #81a1c1;
 }
 
 .hero__buttons:active {
@@ -212,6 +214,7 @@ body {
     background-color: #3b4252;
     border-color: #3b4252;
     box-shadow: 0 0 10px #3b4252;
+    color: #5e81ac;
 }
 
 .hero__buttons:not(last-child) {
@@ -225,7 +228,6 @@ body {
 }
 
 .hero__links {
-    color: #e5e9f0;
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -238,12 +240,10 @@ body {
 
 .hero__links:hover {
     text-decoration: none;
-    color: #81a1c1;
 }
 
 .hero__links:active {
     text-decoration: none;
-    color: #5e81ac;
 }
 
 .text__card {
@@ -258,6 +258,8 @@ body {
 }
 
 .hero__title {
+    margin: 0;
+    padding: 0;
     display: flex;
     height: 80px;
     background-color: #e5e9f0;
@@ -279,4 +281,25 @@ body {
     padding: 5px;
     overflow: auto;
     max-height: 400px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about__titlebox {
+    margin-top: 25px;
+    background-color: #3b4252;
+    border: #3b4252 10px solid;
+    border-radius: 15px;
+}
+
+.about__title {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #e5e9f0;
 }
