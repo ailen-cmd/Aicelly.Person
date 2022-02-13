@@ -129,6 +129,7 @@ body {
     border: #ffffff00 25px solid;
     border-radius: 15px;
     box-shadow: 0 0 10px #11111ef5;
+    transition: box-shadow .2s ease-in-out;
 }
 
 /* .hero__decorationbuttonbox {
@@ -154,11 +155,15 @@ body {
     margin-right: 25px;
 }
 
+.hero__article:hover {
+    box-shadow: 0 0 20px #11111ef5;
+}
+
 .hero__image {
     background-color: #11111e;
     border-radius: 15px;
     border: 5px #d8dee9 solid;
-    box-shadow: 0 0 10px #d8dee9;
+    box-shadow: 0 0 5px #d8dee9;
     max-width: 400px;
     max-height: 400px;
     object-fit: cover;
@@ -170,7 +175,7 @@ body {
 .hero__image:hover {
     transform: scale(105%);
     border-color: #eceff4;
-    box-shadow: 0 0 20px #eceff4;
+    box-shadow: 0 0 10px #eceff4;
 }
 
 .hero__image:active {
@@ -185,7 +190,7 @@ body {
     list-style: none;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.5pc;
+    font-size: 40px;
     margin-left: 15px;
 }
 
@@ -196,7 +201,7 @@ body {
     height: 60px;
     border: #31313e 10px solid;
     border-radius: 15px;
-    box-shadow: 0 0 10px #31313e;
+    box-shadow: 0 0 5px #31313e;
     transition-property: transform, border-color, background-color, box-shadow, color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
@@ -207,7 +212,7 @@ body {
     cursor: pointer;
     background-color: #41414e;
     border-color: #41414e;
-    box-shadow: 0 0 20px #41414e;
+    box-shadow: 0 0 10px #41414e;
     text-decoration: none;
     color: #eceff4;
 }
@@ -217,7 +222,7 @@ body {
     cursor: pointer;
     background-color: #21212e;
     border-color: #21212e;
-    box-shadow: 0 0 10px #21212e;
+    box-shadow: 0 0 5px #21212e;
     color: #d8dee9;
 }
 
@@ -239,7 +244,7 @@ body {
     transition-property: color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
-    font-size: 1.5vw;
+    font-size: 30px;
 }
 
 .hero__links:hover {
@@ -268,12 +273,12 @@ body {
 .hero__discription {
     margin-top: 25px;
     color: #e5e9f0;
-    font-size: 1.4vw;
+    font-size: 25px;
     background-color: #21212e;
     border-radius: 15px;
     padding: 5px;
     overflow: auto;
-    max-height: 400px;
+    max-height: 400px !important;
 }
 
 .hero__about {
@@ -293,6 +298,12 @@ body {
 }
 
 @media (max-width: 1600px) {
+    .hero__about {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 1600px) {
     .hero__person {
         flex-direction: column;
         justify-content: center;
@@ -304,6 +315,12 @@ body {
 @media (max-width: 1600px) {
     .hero {
         height: 1050px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .hero__discription {
+        max-height: 200px !important;
     }
 }
 
@@ -327,4 +344,3 @@ body {
     font-weight: bolder;
     color: #e5e9f0;
 }
-
