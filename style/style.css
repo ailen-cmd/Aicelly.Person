@@ -8,7 +8,9 @@ body {
 
 .navigationHeader {
     font-family: Helvetica, sans-serif;
-    background-color: #11111e;
+    background-color: #11111ef5;
+    position: fixed;
+    z-index: 100;
 }
 
 .header__content {
@@ -60,6 +62,8 @@ body {
     transition-property: color, border-radius, border-color, background-color, box-shadow;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .navigation__text:not(last-child) {
@@ -111,6 +115,8 @@ body {
     height: 700px;
     background: url(/img/back.jpg) no-repeat fixed center / cover;
     background-color: #21212e;
+    box-shadow: 0 0 10px #11111e;
+    padding-top: 50px;
 }
 
 .hero__person {
@@ -160,6 +166,14 @@ body {
     box-shadow: 0 0 20px #11111ef5;
 }
 
+.hero__imagediv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    max-height: 400px;
+}
+
 .hero__image {
     background-color: #11111e;
     border-radius: 15px;
@@ -185,9 +199,9 @@ body {
 }
 
 .hero__linkbox {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
     list-style: none;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
@@ -234,7 +248,8 @@ body {
 .hero__imagebox {
     display: flex;
     margin-top: 25px;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero__links {
@@ -275,7 +290,7 @@ body {
     margin-top: 25px;
     color: #e5e9f0;
     font-size: 25px;
-    background-color: #21212e;
+    background-color: #31313e;
     border-radius: 15px;
     padding: 5px;
     overflow: auto;
@@ -288,6 +303,7 @@ body {
 
 .hero__presentation {
     max-width: 1000px;
+    margin-left: 25px;
 }
 
 .hero__presentationMobile {
@@ -318,14 +334,15 @@ body {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .hero__about,
     .hero__presentation {
         max-width: 80%;
+        margin-left: 25px;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .hero__person {
         flex-direction: column;
         align-items: center;
@@ -334,26 +351,26 @@ body {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .hero {
         display: flex;
         height: 1050px;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .hero__discription {
         max-height: 200px !important;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .hero__buttons:not(last-child) {
         margin-top: 25px;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .hero__links {
         font-size: 25px;
     }
@@ -372,7 +389,7 @@ body {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .hero__imagebox {
         display: flex;
         justify-content: center;
@@ -423,8 +440,8 @@ body {
 
 .about__titlebox {
     margin-top: 25px;
-    background-color: #21212e;
-    border: #21212e 10px solid;
+    background-color: #11111e;
+    border: #11111e 10px solid;
     border-radius: 15px;
 }
 
@@ -435,4 +452,57 @@ body {
     font-size: 40px;
     font-weight: bolder;
     color: #e5e9f0;
+}
+
+.about__articlebox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about__article {
+    margin-top: 25px;
+    max-height: 400px;
+    max-width: 45%;
+    background-color: #11111e;
+    border-radius: 15px;
+    min-width: 400px;
+    display: flex;
+    box-shadow: 0 0 10px #11111e;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.about__article:hover {
+    box-shadow: 0 0 20px #11111e;
+}
+
+.about__image {
+    background-color: #11111e;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+
+.about__articletext {
+    margin: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #31313e;
+    color: #e5e9f0;
+    max-height: 200px;
+    overflow: auto;
+}
+
+@media (max-width: 1300px) {
+    .about__articlebox {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    .about__article {
+        max-width: 100%;
+    }
 }
