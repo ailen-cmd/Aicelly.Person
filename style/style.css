@@ -271,6 +271,46 @@ body {
     outline: none;
 }
 
+.me__mobile__button__information {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .me__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1400px) {
+    .me__discription, .me__imgarticle, .me__button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .me__buttons, .me__image {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .me {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .me__imagebox {
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
+
+
+
 .about {
     display: flex;
     justify-content: center;
