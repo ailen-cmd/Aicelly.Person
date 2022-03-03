@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <link rel="icon" href="./img/logotypet.svg" type="image/x-icon">
+    <title>Aicelly</title>
 </head>
 
 <body>
@@ -54,19 +55,19 @@
                     <img src="./img/namee.jpg" class="me__image">
                     <ul class="aiList me__buttons">
                         <li class="">
-                            <div href="#" class="aiButton me__button me__button__first" tabindex="5"><span>О себе</span></div>
+                            <a href="#secabout" class="aiButton me__button me__button__first hashlink" tabindex="5"><span>О себе</span></a>
                         </li>
                         <li class="">
-                            <div href="#" class="aiButton me__button" tabindex="6"><span>Портфолио</span></div>
+                            <a href="#secportfolio" class="aiButton me__button hashlink" tabindex="6"><span>Портфолио</span></a>
                         </li>
                         <li class="">
-                            <div href="#" class="aiButton me__button" tabindex="7"><span>Ссылки</span></div>
+                            <a href="#seclinks" class="aiButton me__button hashlink" tabindex="7"><span>Ссылки</span></a>
                         </li>
                         <li class="">
-                            <div href="#" class="aiButton me__button" tabindex="8"><span>Связаться</span></div>
+                            <a href="#" class="aiButton me__button hashlink" tabindex="8"><span>Связаться</span></a>
                         </li>
                         <li class="me__mobile__button__information">
-                            <div href="#" class="aiButton me__button" tabindex="8"><span>Информация</span></div>
+                            <a href="#" class="aiButton me__button hashlink" tabindex="8"><span>Информация</span></a>
                         </li>
                     </ul>
                 </div>
@@ -83,7 +84,7 @@
             </article>
         </div>
     </section>
-    <section class="about container-fluid">
+    <section class="about container-fluid" id="secabout">
         <div class="container about__content col-10">
             <div class="aiTitlebox about__titlebox">
                 <h2 class="aiTitle about__title row col-12">
@@ -106,21 +107,72 @@
                 </article>
             </div>
     </section>
-    <section class="portfolio container-fluid">
+    <section class="portfolio container-fluid" id="secportfolio">
         <div class="container portfolio__content col-10">
             <div class="aiTitlebox portfolio__titlebox">
                 <h2 class="aiTitle portfolio__title row col-12">
                     Мой Портфолио
                 </h2>
             </div>
-            <article class="aiArticle portfolio__article">
-                <a href="#" class="portfolio__gradient"><img src="./img/port.jpg" class="portfolio__image"></a>
-                <div class="aiTitlebox aiWhite">
-                    <h2 class="aiTitle aiWhiteText">asdsa</h2>
+            <div class="portfolio__articlebox">
+            <article class="aiArticle portfolio__article pf0">
+                <div class="aiTitlebox aiTitleboxBlur portfolio__article__titlebox">
+                    <div class="aiTitle portfolio__title">Short Name</div>
+                </div>
+                <div class="portfolio__discription">
+                    <a href="#" class="portfolio__link"><img src="./img/arrow-rigth.svg" class="portfolio__arrow"></a>
+                    <p class="aiText aiBlurText portfolio__discription__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis porro cum sequi, qui cupiditate praesentium? Ex similique architecto, esse provident sint eligendi error deleniti alias a nesciunt perferendis qui et!
+                    </p>
                 </div>
             </article>
+            <article class="aiArticle portfolio__article pf1">
+                <div class="aiTitlebox aiTitleboxBlur portfolio__article__titlebox">
+                    <div class="aiTitle portfolio__title">Short Name</div>
+                </div>
+                <div class="portfolio__discription">
+                    <a href="#" class="portfolio__link"><img src="./img/arrow-rigth.svg" class="portfolio__arrow"></a>
+                    <p class="aiText aiBlurText portfolio__discription__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis porro cum sequi, qui cupiditate praesentium? Ex similique architecto, esse provident sint eligendi error deleniti alias a nesciunt perferendis qui et!
+                    </p>
+                </div>
+            </article>
+            <article class="aiArticle portfolio__article pf2">
+                <div class="aiTitlebox aiTitleboxBlur portfolio__article__titlebox">
+                    <div class="aiTitle portfolio__title">Short Name</div>
+                </div>
+                <div class="portfolio__discription">
+                    <a href="#" class="portfolio__link"><img src="./img/arrow-rigth.svg" class="portfolio__arrow"></a>
+                    <p class="aiText aiBlurText portfolio__discription__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis porro cum sequi, qui cupiditate praesentium? Ex similique architecto, esse provident sint eligendi error deleniti alias a nesciunt perferendis qui et!
+                    </p>
+                </div>
+            </article>
+            </div>
+    </section>
+    <section class="links container-fluid" id="seclinks">
+        <div class="container portfolio__content col-10">
+            <div class="aiTitlebox links__titlebox">
+                <h2 class="aiTitle links__title row col-12">
+                    Ссылки
+                </h2>
+            </div>
+            <div class="links__articlebox">
+                <a href="#" class="aiArticle links__article">
+                    <img src="./img/telega.svg" class="links__image tgsvg">
+                    <p class="aiText links__articletext">@telegalink</p>
+                </a>
+                <a href="#" class="aiArticle links__article">
+                    <img src="./img/youtube.svg" class="links__image ytsvg">
+                    <p class="aiText links__articletext">ChannelName</p>
+                </a>
+                <a href="#" class="aiArticle links__article">
+                    <img src="./img/discord.svg" class="links__image dssvg">
+                    <p class="aiText links__articletext">Nick#7272</p>
+                </a>
+            </div>
         </div>
     </section>
 </body>
-
+<script src="./script/script.js"></script>
 </html>
