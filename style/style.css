@@ -527,12 +527,12 @@ body {
 
 .links__image {
     filter: invert(97%) sepia(4%) saturate(1054%) hue-rotate(184deg) brightness(93%) contrast(102%);
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     margin: 15px;
 }
 
-.tgsvg {
+/* .tgsvg {
     filter: invert(62%) sepia(98%) saturate(5821%) hue-rotate(178deg) brightness(94%) contrast(101%);
 }
 
@@ -542,7 +542,7 @@ body {
 
 .dssvg {
     filter: invert(54%) sepia(95%) saturate(1137%) hue-rotate(199deg) brightness(90%) contrast(89%);
-}
+} */
 
 .links__articletext {
     max-height: 200px;
